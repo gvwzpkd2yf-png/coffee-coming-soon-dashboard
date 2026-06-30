@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T00:00:00Z",
+  "lastUpdated": "2026-06-30T21:05:26Z",
   "shops": [
     {
       "id": "la-la-land-kind-cafe-charlotte",
@@ -143,7 +143,7 @@
           "type": "news"
         }
       ],
-      "notes": "Locally owned drive-thru/walk-up coffee chain (existing locations include South Blvd and Monroe Rd) adding a 4th Charlotte location at 2905 Monroe Road, between Tipsy Burro and Smokey Joe's Cafe near the edge of Elizabeth. Targeting a late-summer 2026 opening with a compact stand format. Good early-coverage candidate since no opening date confirmed yet.",
+      "notes": "Locally owned drive-thru/walk-up coffee chain (existing locations include South Blvd and Monroe Rd) adding a 4th Charlotte location at 2905 Monroe Road, between Tipsy Burro and Smokey Joe's Cafe near the edge of Elizabeth. Targeting a late-summer 2026 opening with a compact stand format. Good early-coverage candidate since no opening date confirmed yet. No new signal found this run (checked again 2026-06-30) — still no firm date.",
       "reviewed": false
     },
     {
@@ -162,7 +162,7 @@
           "type": "news"
         }
       ],
-      "notes": "Building permits indicate a 510 sq ft standalone drive-thru coffee shop at 1275 Concord Pkwy S, Concord, NC 28027. Part of a regional franchise push by investment group WJ Partners aiming for 100 7 Brew locations across the Carolinas/Georgia (announced November 2025). No opening timeline yet as of the March 24, 2026 article — worth monitoring for a firmer date since national chain openings draw less unique review interest but are still high-traffic searches.",
+      "notes": "Building permits indicate a 510 sq ft standalone drive-thru coffee shop at 1275 Concord Pkwy S, Concord, NC 28027. Part of a regional franchise push by investment group WJ Partners aiming for 100 7 Brew locations across the Carolinas/Georgia (announced November 2025). Re-checked 2026-06-30: a CNN Business piece (2026-05-25) on 7 Brew's national push didn't mention this Concord site specifically and noted 2026 growth focus is Texas/Florida/Virginia/Georgia — still no firm opening date found. Worth monitoring for a firmer date since national chain openings draw less unique review interest but are still high-traffic searches.",
       "reviewed": false
     },
     {
@@ -170,18 +170,33 @@
       "name": "Waterbean Coffee Exquisite",
       "city": "Gastonia",
       "neighborhood": "Downtown Gastonia",
-      "status": "opening_soon",
-      "confidence": "medium",
+      "status": "opened",
+      "confidence": "high",
       "firstDetected": "2025-05-29",
-      "expectedOpening": "Originally targeted summer 2025; status unconfirmed as of mid-2026, verify before publishing",
+      "expectedOpening": "Opened (exact date unconfirmed; Yelp reviews and grand-opening Facebook post place it in spring 2026)",
       "sources": [
         {
           "label": "What Now Charlotte - Waterbean Coffee Opening Large Location In Gastonia This Summer",
           "url": "https://whatnow.com/charlotte/restaurants/waterbean-coffee-opening-large-location-in-gastonia-this-summer/",
           "type": "news"
+        },
+        {
+          "label": "Yelp - Waterbean Coffee Exquisite (618 W Franklin Blvd, Gastonia)",
+          "url": "https://www.yelp.com/biz/waterbean-coffee-exquisite-gastonia",
+          "type": "other"
+        },
+        {
+          "label": "Waterbean Coffee Facebook - grand opening post",
+          "url": "https://www.facebook.com/waterbean.coffee/posts/dear-valued-customers-family-and-friendstomorrow-marks-one-of-the-biggest-milest/1325477339557357/",
+          "type": "social"
+        },
+        {
+          "label": "Waterbean Exquisite Gastonia Instagram",
+          "url": "https://www.instagram.com/waterbeancoffeegastonia/",
+          "type": "social"
         }
       ],
-      "notes": "4,100 sq ft flagship-style location at 618 W Franklin Blvd, Gastonia, NC 28052 — would be Waterbean's largest of 18+ Greater Charlotte locations, with on-site bakery and high-end specialty coffee under the 'Waterbean Coffee Exquisite' sub-brand. Source article is from May 2025 and targeted a summer 2025 opening that may have already happened or slipped — this entry needs a fresh search next run to confirm current status before treating as 'coming soon.'",
+      "notes": "UPDATED 2026-06-30: confirmed open. 4,100 sq ft flagship-style location at 618 W Franklin Blvd Unit D, Gastonia, NC 28052 (Waterbean's largest of 18+ Greater Charlotte locations), with on-site bakery and high-end specialty coffee under the 'Waterbean Coffee Exquisite' sub-brand. Open daily 7am-9pm. Status upgraded from opening_soon to opened based on active Yelp reviews (dated April 2026), a Facebook grand-opening post, and an active Instagram account.",
       "reviewed": false
     },
     {
@@ -189,18 +204,33 @@
       "name": "Bad Ass Coffee of Hawaii",
       "city": "Rock Hill",
       "neighborhood": "The Thread (near downtown)",
-      "status": "opening_soon",
-      "confidence": "medium",
+      "status": "opened",
+      "confidence": "high",
       "firstDetected": "2026-01-05",
-      "expectedOpening": "Targeted March 2026",
+      "expectedOpening": "Opened spring 2026 (covered June 16, 2026)",
       "sources": [
         {
           "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
           "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
           "type": "news"
+        },
+        {
+          "label": "Post and Courier - Fill 'er up: More coffee shops opening across Rock Hill area",
+          "url": "https://www.postandcourier.com/york-county/business/new-rock-hill-coffee-shops/article_c04f07ac-78df-4fb7-aeb1-bbe2584067d0.html",
+          "type": "news"
+        },
+        {
+          "label": "K104.7 - Bad Ass Coffee Opens Rock Hill Location as First Step in 3-Store Plan",
+          "url": "https://k1047.com/2026/06/16/bad-ass-coffee-opens-rock-hill-location-as-first-step-in-3-store-plan/",
+          "type": "news"
+        },
+        {
+          "label": "Yahoo News - Bad Ass Coffee opens Rock Hill shop with more planned",
+          "url": "https://www.yahoo.com/news/us/articles/bad-ass-coffee-opens-rock-181251859.html",
+          "type": "news"
         }
       ],
-      "notes": "Hawaiian-themed specialty coffee franchise location planned at The Thread near downtown Rock Hill, SC, targeted for March 2026 per a January 5, 2026 Post and Courier piece on York County's coffee scene. Should confirm whether it has actually opened by now (article is ~6 months old as of this seed).",
+      "notes": "UPDATED 2026-06-30: confirmed open. Hawaiian-themed specialty coffee franchise location opened at 220 W. White St. in Rock Hill, SC, inside The Thread (converted 400,000 sq ft textile mill near downtown). Franchise agreement requires opening at least 3 stores in York County over the next two years, so 2 more locations are planned. Status upgraded from opening_soon to opened given multiple independent local/regional outlets covering the opening in mid-June 2026.",
       "reviewed": false
     },
     {
@@ -208,18 +238,28 @@
       "name": "Scooter's Coffee",
       "city": "Rock Hill",
       "neighborhood": "Old York Road area",
-      "status": "opening_soon",
-      "confidence": "low",
+      "status": "opened",
+      "confidence": "medium",
       "firstDetected": "2026-01-05",
-      "expectedOpening": "Grand opening targeted January 16, 2026",
+      "expectedOpening": "Opened; grand opening celebration January 30, 2026",
       "sources": [
         {
           "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
           "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
           "type": "news"
+        },
+        {
+          "label": "AllEvents - Scooters Coffee Grand Opening Celebration, 4971 Old York Rd",
+          "url": "https://allevents.in/rock-hill/scooters-coffee-grand-opening-celebration/200029594325329",
+          "type": "other"
+        },
+        {
+          "label": "Yelp - Scooter's Coffee, 4971 Old York Rd, Rock Hill",
+          "url": "https://www.yelp.com/biz/scooters-coffee-rock-hill-3",
+          "type": "other"
         }
       ],
-      "notes": "National drive-thru chain location at 4971 Old York Road, Rock Hill SC area, with grand opening dated Jan 16, 2026 per the same Post and Courier roundup. Low confidence because this is a single-source, single-line mention with no independent corroboration found yet, and as a national chain it's lower review priority but still worth tracking for completeness of the York County coffee trail picture.",
+      "notes": "UPDATED 2026-06-30: confirmed open. National drive-thru chain location at 4971 Old York Road, Rock Hill SC opened with grand opening dated Jan 16, 2026 (soft open) and a follow-up grand opening celebration event Jan 30, 2026. Status upgraded from opening_soon to opened; confidence kept at medium since it's still a thin national-chain story with no unique local feature coverage, but the corroborating event listing + active Yelp page confirm it's operating.",
       "reviewed": false
     },
     {
@@ -227,18 +267,28 @@
       "name": "Ellianos Coffee",
       "city": "Clover",
       "neighborhood": null,
-      "status": "rumored",
-      "confidence": "low",
+      "status": "confirmed",
+      "confidence": "medium",
       "firstDetected": "2026-01-05",
-      "expectedOpening": "Unspecified, announced expansion",
+      "expectedOpening": "Unspecified; one-store development agreement signed",
       "sources": [
         {
           "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
           "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
           "type": "news"
+        },
+        {
+          "label": "GlobeNewswire - Ellianos Coffee Announces Expansion to South Carolina",
+          "url": "https://www.globenewswire.com/news-release/2025/11/04/3180326/0/en/ellianos-coffee-announces-expansion-to-south-carolina.html",
+          "type": "news"
+        },
+        {
+          "label": "QSR Magazine - Ellianos Coffee to Expand in South Carolina",
+          "url": "https://www.qsrmagazine.com/news/ellianos-coffee-to-expand-in-south-carolina/",
+          "type": "news"
         }
       ],
-      "notes": "Florida-based drive-thru coffee chain announced expansion to the Clover, SC area (York County, just SW of Rock Hill / outer Metrolina). No address or firm date found yet — single-source mention, needs follow-up search for permits or a more specific local announcement before upgrading confidence.",
+      "notes": "UPDATED 2026-06-30: upgraded rumored to confirmed. Florida-based drive-thru coffee chain signed a one-store development agreement for Clover, SC (York County, just SW of Rock Hill / outer Metrolina) per an official company press release (GlobeNewswire, Nov 2025) corroborating the original Post and Courier mention. Still no address or firm opening date found — needs a follow-up search for permits or a more specific local announcement before upgrading further to opening_soon.",
       "reviewed": false
     },
     {
@@ -246,18 +296,317 @@
       "name": "Parkin' Latte (storefront expansion)",
       "city": "Clover",
       "neighborhood": null,
-      "status": "rumored",
-      "confidence": "low",
+      "status": "opened",
+      "confidence": "medium",
       "firstDetected": "2026-01-05",
-      "expectedOpening": "Sometime in 2026",
+      "expectedOpening": "Blacksburg storefront opened January 2026; Clover storefront status still unconfirmed",
       "sources": [
         {
           "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
           "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
           "type": "news"
+        },
+        {
+          "label": "What Now Charlotte - Parkin' Latte Bringing Brick-and-Mortar Coffee Shop To Blacksburg",
+          "url": "https://whatnow.com/charlotte/restaurants/parkin-latte-bringing-brick-and-mortar-coffee-shop-to-blacksburg/",
+          "type": "news"
         }
       ],
-      "notes": "Existing mobile coffee business (owner Briana Harris) planning to open storefront locations in Clover and Blacksburg, SC (Cherokee County) sometime in 2026, per owner quote in the Post and Courier piece. This is at the far southwestern edge of what Caleb might consider 'Metrolina' — flagged as borderline geography, include only if Clover/York County storefronts are in scope. Low confidence, single source, no firm timeline.",
+      "notes": "UPDATED 2026-06-30: existing mobile coffee business (owner Briana Harris) confirmed to have opened its first storefront at 113 N Shelby Street, Blacksburg, SC (Cherokee County) in January 2026 — the 2025 York County 'Best Coffee+Barista' winner. The Clover, SC storefront mentioned in the original Jan 2026 article has not been separately confirmed as open; this entry is being kept under 'Clover' city per the original lead but really tracks the broader 2-storefront expansion. Status set to opened based on the confirmed Blacksburg location; flag that the Clover-specific storefront still needs verification. This remains at the far southwestern edge of what Caleb might consider 'Metrolina' — borderline geography.",
+      "reviewed": false
+    },
+    {
+      "id": "dutch-bros-rock-hill",
+      "name": "Dutch Bros Coffee",
+      "city": "Rock Hill",
+      "neighborhood": "Celanese Road",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened March 31, 2026",
+      "sources": [
+        {
+          "label": "WBTV - Dutch Bros announces opening day for first Charlotte-area shop",
+          "url": "https://www.wbtv.com/2026/03/30/dutch-bros-announces-opening-day-first-charlotte-area-shop/",
+          "type": "news"
+        },
+        {
+          "label": "QC News - Dutch Bros just opened its first Rock Hill spot: here's what to expect",
+          "url": "https://www.qcnews.com/news/local-news/dutch-bros-just-opened-its-first-rock-hill-spot-heres-what-to-expect/",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-06-30: this is Dutch Bros' first Charlotte-area location, opened 5am Tuesday March 31, 2026 along Celanese Road in Rock Hill, SC (~30 min from Uptown Charlotte). Oregon-based drive-thru chain. Company has announced further Carolinas expansion plans including Mooresville and Indian Trail NC, and Rock Hill, Boiling Springs, Mount Pleasant, Charleston SC (see separate Mooresville entry) — worth tracking each as a distinct location/entry as they firm up.",
+      "reviewed": false
+    },
+    {
+      "id": "dutch-bros-mooresville",
+      "name": "Dutch Bros Coffee",
+      "city": "Mooresville",
+      "neighborhood": "Williamson Rd",
+      "status": "confirmed",
+      "confidence": "medium",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Unannounced; address known, part of announced NC/SC expansion wave",
+      "sources": [
+        {
+          "label": "Roadtrippers - Dutch Bros Coffee, Coming Soon, Mooresville",
+          "url": "https://maps.roadtrippers.com/us/mooresville-nc/food-drink/dutch-bros-coffee-coming-soon-mooresville-nc--0",
+          "type": "other"
+        },
+        {
+          "label": "WBTV - Dutch Bros announces opening day for first Charlotte-area shop (notes planned NC/SC expansion incl. Mooresville)",
+          "url": "https://www.wbtv.com/2026/03/30/dutch-bros-announces-opening-day-first-charlotte-area-shop/",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-06-30: a 'coming soon' Dutch Bros location is listed at 356 Williamson Rd, Mooresville, NC 28117, consistent with the company's announced post-Rock Hill expansion wave into Mooresville, Indian Trail, Clemmons, Monroe and other NC/SC towns. No firm opening date found yet — national chain, lower unique-review priority but worth tracking as Mooresville's first.",
+      "reviewed": false
+    },
+    {
+      "id": "caribou-coffee-mooresville",
+      "name": "Caribou Coffee",
+      "city": "Mooresville",
+      "neighborhood": "E Plaza Dr / Statesville Hwy",
+      "status": "opened",
+      "confidence": "medium",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened June 2026",
+      "sources": [
+        {
+          "label": "Mooresville Tribune - National coffee chain to open in Mooresville, NC",
+          "url": "https://mooresvilletribune.com/news/local/cariboucoffee-mooresvillenc-location-business/article_70d526b0-407f-11ef-a7ff-9bb8da2652ee.html",
+          "type": "news"
+        },
+        {
+          "label": "Caribou Coffee - East Plaza & Statesville (Drive-Thru) location page",
+          "url": "https://locations.cariboucoffee.com/us/nc/mooresville/553-e-plaza-dr",
+          "type": "other"
+        }
+      ],
+      "notes": "NEW 2026-06-30: Caribou Coffee opened a new drive-thru + indoor/outdoor seating location at 553 E Plaza Dr, Mooresville, NC, at the intersection of E Plaza Dr and Statesville Hwy near Food Lion. This is Caribou's second new NC opening this year, bringing their statewide count to twelve. National chain, but fresh enough (June 2026) and distinct from the existing Mooresville Caribou/Defined Coffee/Ellianos locations already in town.",
+      "reviewed": false
+    },
+    {
+      "id": "most-dope-coffee-rock-hill",
+      "name": "Most Dope Coffee",
+      "city": "Rock Hill",
+      "neighborhood": "Power House (Technology Center Way)",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened spring 2026 (debuted ~April-May 2026)",
+      "sources": [
+        {
+          "label": "What Now Charlotte - Most Dope Coffee Bringing Filipino Twist To Rock Hill Coffee Scene",
+          "url": "https://whatnow.com/charlotte/restaurants/most-dope-coffee-bringing-filipino-twist-to-rock-hill-coffee-scene/",
+          "type": "news"
+        },
+        {
+          "label": "WRHI - Filipino-Inspired Coffee Concept Set to Debut in Rock Hill's Power House Building",
+          "url": "https://www.wrhi.com/2026/02/filipino-inspired-coffee-concept-set-to-debut-in-rock-hills-power-house-building-209773",
+          "type": "news"
+        },
+        {
+          "label": "Post and Courier - Fill 'er up: More coffee shops opening across Rock Hill area",
+          "url": "https://www.postandcourier.com/york-county/business/new-rock-hill-coffee-shops/article_c04f07ac-78df-4fb7-aeb1-bbe2584067d0.html",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-06-30: Filipino-inspired specialty coffee shop owned by Michael Mendoza and Wayne Martin (also own Red Wolf Martial Arts) at 378 Technology Center Way, Suite 103, in the Power House food hall, Rock Hill SC. Signature drinks include calamansi sweet tea and ube beverages, beans sourced largely from the Philippines. Strong unique-angle story (hip-hop-influenced branding, Filipino coffee culture) — good review candidate.",
+      "reviewed": false
+    },
+    {
+      "id": "mug-and-maple-rock-hill",
+      "name": "Mug & Maple",
+      "city": "Rock Hill",
+      "neighborhood": "Power House (Technology Center Way)",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened mid-April 2026; grand opening celebration began May 1, 2026",
+      "sources": [
+        {
+          "label": "Post and Courier - Mug & Maple cafe aims to become a Rock Hill coffee destination",
+          "url": "https://www.postandcourier.com/york-county/business/mug-maple-cafe-rock-hill-coffee-shop/article_65747ac5-2984-452d-a090-117d6c8f330e.html",
+          "type": "news"
+        },
+        {
+          "label": "Hoodline - Maple Madness Hits Rock Hill as Health First Coffee Bar Plans Power House Debut",
+          "url": "https://hoodline.com/2026/04/maple-madness-hits-rock-hill-health-first-coffee-bar-plots-power-house-debut/",
+          "type": "news"
+        },
+        {
+          "label": "What Now Charlotte - Mug and Maple Bringing Health-Centric Menu To Rock Hill Community",
+          "url": "https://whatnow.com/charlotte/restaurants/mug-and-maple-bringing-health-centric-menu-to-rock-hill-community/",
+          "type": "news"
+        },
+        {
+          "label": "Power House Rock Hill Facebook - Mug & Maple officially opened",
+          "url": "https://www.facebook.com/powerhouserockhill/posts/the-wait-is-over-rock-hill-mugandmaple-is-officially-opened-their-doors-at-the-p/966836125871725/",
+          "type": "social"
+        }
+      ],
+      "notes": "NEW 2026-06-30: owned by Nate and Kate Kingsley at 378 Technology Center Way, Power House food hall, Rock Hill SC (same building as Most Dope Coffee). 'No seed oils, no bleached grains, no artificial anything' health-centric philosophy; coffee sourced from Jags Head, a Charlotte-based roaster. Signature drinks: Honey Beean (vanilla + local NC honey latte), The OG Maple (New England maple syrup). Cozy New England-flair lounge with couches and outdoor seating. Multi-source, fresh, strong story — good review candidate.",
+      "reviewed": false
+    },
+    {
+      "id": "koda-and-co-coffee-rock-hill",
+      "name": "Koda & Co Coffee",
+      "city": "Rock Hill",
+      "neighborhood": "East White Street",
+      "status": "opened",
+      "confidence": "low",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened; exact date unconfirmed, Yelp activity visible by Dec 2025",
+      "sources": [
+        {
+          "label": "Post and Courier - Fill 'er up: More coffee shops opening across Rock Hill area",
+          "url": "https://www.postandcourier.com/york-county/business/new-rock-hill-coffee-shops/article_c04f07ac-78df-4fb7-aeb1-bbe2584067d0.html",
+          "type": "news"
+        },
+        {
+          "label": "Yelp - Koda & Coffee, 911 E White St, Rock Hill",
+          "url": "https://www.yelp.com/biz/koda-and-coffee-rock-hill-2",
+          "type": "other"
+        }
+      ],
+      "notes": "NEW 2026-06-30: located at 911 E White St, Rock Hill SC. Single-source roundup mention with no firm opening date; Yelp listing activity suggests it may have already been open since late 2025, which would put it outside the strict 60-day freshness window — flagged low confidence accordingly, included for completeness of the York County coffee-shop picture.",
+      "reviewed": false
+    },
+    {
+      "id": "the-roasting-route-fort-mill",
+      "name": "The Roasting Route",
+      "city": "Fort Mill",
+      "neighborhood": "Inside The Postal Route",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Soft opened late April 2026; grand opening celebration May 13, 2026",
+      "sources": [
+        {
+          "label": "Tega Cay Sun - New Coffee Shop Brews Up in Fort Mill With a Unique Twist",
+          "url": "https://tegacaysun.com/2026/04/28/new-coffee-shop-brews-up-in-fort-mill-with-a-unique-twist/",
+          "type": "news"
+        },
+        {
+          "label": "FortMillNow Facebook - The Roasting Route has officially landed in Fort Mill",
+          "url": "https://www.facebook.com/FortMillNow/posts/a-new-coffee-shop-the-roasting-route-has-officially-landed-in-fort-mill-and-it-m/1415594860580651/",
+          "type": "social"
+        },
+        {
+          "label": "Post and Courier - Fill 'er up: More coffee shops opening across Rock Hill area",
+          "url": "https://www.postandcourier.com/york-county/business/new-rock-hill-coffee-shops/article_c04f07ac-78df-4fb7-aeb1-bbe2584067d0.html",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-06-30: combination coffee shop / shipping counter / gift shop concept (Tega Cay Coffee Company expansion) located inside The Postal Route at 2764 Pleasant Rd, Fort Mill, SC. Nautical-themed interior with a private meeting room. Soft opened with limited hours (8am-1pm) in late April 2026, full grand opening celebration was May 13, 2026 ($1 drinks, 20% off gift items). Strong multi-source, unique-concept story.",
+      "reviewed": false
+    },
+    {
+      "id": "haraz-coffee-house-fort-mill",
+      "name": "Haraz Coffee House",
+      "city": "Fort Mill",
+      "neighborhood": "Len Patterson Rd",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Soft opened May 20, 2026",
+      "sources": [
+        {
+          "label": "Yelp - Haraz Coffee House, 2373 Len Patterson Rd, Fort Mill",
+          "url": "https://m.yelp.com/biz/haraz-coffee-house-fort-mill-2",
+          "type": "other"
+        },
+        {
+          "label": "FortMillNow Facebook - Haraz Coffee House is officially open in Fort Mill",
+          "url": "https://www.facebook.com/FortMillNow/posts/haraz-coffee-house-is-officially-open-in-fort-mill-%EF%B8%8F-it-soft-opened-yesterday-so/1438274641646006/",
+          "type": "social"
+        },
+        {
+          "label": "Haraz Coffee House - Fort Mill, SC Instagram",
+          "url": "https://www.instagram.com/hrzfortmillsc/",
+          "type": "social"
+        }
+      ],
+      "notes": "NEW 2026-06-30: Yemeni-style coffee chain's first South Carolina location at 2373 Len Patterson Rd, Ste 103, Fort Mill SC (their 15th state, 51st location nationwide). Soft opened May 20, 2026, hours 6am-11pm Mon-Fri. Distinct from Haraz's existing/announced Charlotte-area locations (South End, University City, Concord) reported in earlier Axios coverage — this is a separate physical location and review opportunity. Part of the broader 'Yemeni coffee craze' wave in the region (Haraz, Qahwah House, Qamaria).",
+      "reviewed": false
+    },
+    {
+      "id": "summit-farms-davidson",
+      "name": "Summit Farms (Summit Coffee village)",
+      "city": "Davidson",
+      "neighborhood": null,
+      "status": "confirmed",
+      "confidence": "medium",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Spring 2027; construction on infrastructure/trails/greenways started April 2026",
+      "sources": [
+        {
+          "label": "Axios Charlotte - Davidson farm village by Summit Coffee set to break ground",
+          "url": "https://www.axios.com/local/charlotte/2026/04/07/summit-coffee-farms-davidson-development-nc",
+          "type": "news"
+        },
+        {
+          "label": "Davidson's Restaurant Scene in 2026 - Sadler Square, Summit Farms blog post",
+          "url": "https://nicoleleininger.com/blog/davidson-has-always-had-great-restaurants-in-2026-it-finally-has-a-great-restaurant-scene",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-06-30: large-scale 62-acre farm-to-table village from the team behind Davidson-born Summit Coffee. Will include Summit's new 7,000 sq ft headquarters and roasting facility, a 10-acre organic farm, on-site market/deli/wood-fired pizza restaurant, and a 3,000 sq ft Silly Goose Bakeshop retail space showcasing Summit's bakery program. This is a major, far-out story (targeting spring 2027) rather than a near-term opening, but significant enough to flag now given Summit Coffee's local profile — revisit periodically for groundbreaking/construction milestones rather than expecting near-term review-readiness.",
+      "reviewed": false
+    },
+    {
+      "id": "kuppa-joe-gastonia",
+      "name": "Kuppa Joe",
+      "city": "Gastonia",
+      "neighborhood": "West Franklin Blvd",
+      "status": "opened",
+      "confidence": "medium",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Opened February 14, 2026",
+      "sources": [
+        {
+          "label": "Hoodline - Gastonia Family's 'Kuppa Joe' Quietly Brews A New West Franklin Hangout",
+          "url": "https://hoodline.com/2026/02/gastonia-family-s-kuppa-joe-quietly-brews-a-new-west-franklin-hangout/",
+          "type": "news"
+        },
+        {
+          "label": "Gaston Gazette Facebook - Kuppa Joe is now open in Gastonia",
+          "url": "https://www.facebook.com/gastongazette/posts/kuppa-joe-is-now-open-in-gastonia/1534226815369584/",
+          "type": "social"
+        }
+      ],
+      "notes": "NEW 2026-06-30: family-owned coffee shop at 3888 W. Franklin Blvd, Gastonia NC (former Sweet Scoops ice cream space), opened Feb 14, 2026. Owner Darrin Trapp named it in honor of his late brother Joe and late sister Karen; living-room-style interior with couches and family photos. Already outside the strict 60-day freshness window as of this run, but kept in given the strong community/family story angle (same precedent as Changebaker Place) and that it surfaced for the first time this run.",
+      "reviewed": false
+    },
+    {
+      "id": "pint-and-page-huntersville",
+      "name": "Pint & Page (bookstore + coffee + biergarten)",
+      "city": "Huntersville",
+      "neighborhood": "Downtown Huntersville",
+      "status": "confirmed",
+      "confidence": "medium",
+      "firstDetected": "2026-06-30",
+      "expectedOpening": "Unannounced; in active construction/development as of mid-2026",
+      "sources": [
+        {
+          "label": "Lake Norman Publications - Tiebreaker vote clears way for new downtown Huntersville businesses",
+          "url": "https://www.lakenormanpublications.com/articles/tiebreaker-vote-clears-way-for-new-downtown-huntersville-businesses/",
+          "type": "news"
+        },
+        {
+          "label": "Pint and Page official site",
+          "url": "https://pintandpage.com/",
+          "type": "other"
+        },
+        {
+          "label": "Pint and Page Facebook - progress update",
+          "url": "https://www.facebook.com/61557920222450/posts/exciting-update-from-pint-and-pagewere-making-steady-progress-as-we-bring-pint-a/122206684232264007/",
+          "type": "social"
+        }
+      ],
+      "notes": "NEW 2026-06-30: combination bookstore / coffee shop / biergarten planned at 117 Gilead Road in downtown Huntersville, NC. Zoning approved January 2025; owners posting 'steady progress' construction updates as of 2026 but no firm opening date yet. One of the only concrete 'coming soon' coffee-adjacent leads found for Huntersville this run — town otherwise returned thin signal (mostly existing operators: Coffee Republic, Defined Coffee, Harvest Artisan Cafe, Caribou).",
       "reviewed": false
     }
   ]
