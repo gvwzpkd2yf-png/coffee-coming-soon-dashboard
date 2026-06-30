@@ -1,0 +1,264 @@
+{
+  "lastUpdated": "2026-06-30T00:00:00Z",
+  "shops": [
+    {
+      "id": "la-la-land-kind-cafe-charlotte",
+      "name": "La La Land Kind Cafe",
+      "city": "Charlotte",
+      "neighborhood": "South End",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-04-02",
+      "expectedOpening": "Opened April 4, 2026",
+      "sources": [
+        {
+          "label": "Axios Charlotte - Charlotte is getting the viral La La Land Kind Cafe",
+          "url": "https://www.axios.com/local/charlotte/2026/04/02/la-la-land-kind-cafe-coming-to-charlotte",
+          "type": "news"
+        },
+        {
+          "label": "What Now Charlotte - La La Land Kind Cafe Joining Charlotte Market",
+          "url": "https://whatnow.com/charlotte/restaurants/la-la-land-kind-cafe-joining-charlotte-market-with-south-end-location/",
+          "type": "news"
+        },
+        {
+          "label": "TikTok-famous La La Land Kind Cafe Opens in Charlotte, NC",
+          "url": "https://www.tiktok.com/@livinclt/video/7624383139908963597",
+          "type": "social"
+        }
+      ],
+      "notes": "Dallas-based viral TikTok coffee chain (yellow cups, 'normalize kindness' mission) took over the former Bitty & Beau's Coffee space at 1930 Camden Rd in South End / Design Center of the Carolinas. Opened its first NC location around April 4, 2026. Likely already gotten review coverage from other CLT creators given viral status, but still time-sensitive given how recent the opening is.",
+      "reviewed": false
+    },
+    {
+      "id": "plot-twist-charlotte",
+      "name": "Plot Twist",
+      "city": "Charlotte",
+      "neighborhood": "Plaza Midwood",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-02-24",
+      "expectedOpening": "Opened April 21, 2026",
+      "sources": [
+        {
+          "label": "Axios Charlotte - Plot Twist, an all-day coffee and cocktail bar, opens soon in Plaza Midwood",
+          "url": "https://www.axios.com/local/charlotte/2026/04/16/plot-twist-bar-coffee-plaza-midwood",
+          "type": "news"
+        },
+        {
+          "label": "Business Debut - New Coffee and Cocktail Concept Opening in Charlotte",
+          "url": "https://www.businessdebut.com/new-coffee-and-cocktail-concept-opening-in-charlotte/",
+          "type": "news"
+        },
+        {
+          "label": "WSOCTV - All-day coffee, cocktail bar to debut in Plaza Midwood",
+          "url": "https://www.wsoctv.com/your704/all-day-coffee-cocktail-bar-coming-plaza-midwood/AVSOGC3JDZB5JJSXWMR3MLKY6I/",
+          "type": "news"
+        },
+        {
+          "label": "Plot Twist CLT Instagram",
+          "url": "https://www.instagram.com/plottwistclt/",
+          "type": "social"
+        }
+      ],
+      "notes": "Self-funded coffee + cocktail 'third place' concept from owners Nikki Velazquez and Eric Flanigan at 1518 Lyon Ct, in a former auto garage/tattoo shop. Opened April 21 serving coffee only; cocktails added in early May. 1,627 sq ft, seats 50 inside, patio opening later summer 2026 for ~90 total capacity. Strong, multi-source coverage.",
+      "reviewed": false
+    },
+    {
+      "id": "changebaker-place-east-charlotte",
+      "name": "Changebaker Place",
+      "city": "Charlotte",
+      "neighborhood": "East Charlotte (near Central Ave)",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-03-18",
+      "expectedOpening": "Opened January 17, 2026",
+      "sources": [
+        {
+          "label": "Axios Charlotte - Activist baker Manuel Betancur opens Changebaker Place cafe",
+          "url": "https://www.axios.com/local/charlotte/2026/03/18/east-charlotte-changebaker-place-manuel-betancur-cafe-immigrant-hands-community-space",
+          "type": "news"
+        },
+        {
+          "label": "What Now Charlotte - Manolo's Bakery Owner Expanding Operation",
+          "url": "https://whatnow.com/charlotte/restaurants/manolos-bakery-owner-expanding-operation/",
+          "type": "news"
+        }
+      ],
+      "notes": "New cafe by Manolo's Bakery owner / local activist Manuel Betancur at 4405 Central Ave, next door to Manolo's, inside a former hair salon. Serves pastries, gelato, sandwiches, espresso/coffee with Colombian beans. Quietly opened Jan 17, 2026 then got press coverage in March. Community-space angle and documentary tie-in ('The Changebaker') give it a strong story hook, even though by the publish date it's already outside a strict 60-day opened window — kept in as a notable, under-covered shop worth flagging to Caleb regardless.",
+      "reviewed": false
+    },
+    {
+      "id": "sparkhouse-uptown-charlotte",
+      "name": "Sparkhouse Coffee (Sparkhouse Uptown)",
+      "city": "Charlotte",
+      "neighborhood": "Uptown",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-06-20",
+      "expectedOpening": "Opened June 19, 2026 (Juneteenth)",
+      "sources": [
+        {
+          "label": "QCity Metro - Do Greater Charlotte opens Sparkhouse Uptown",
+          "url": "https://www.qcitymetro.com/business/do-greater-charlotte-opens-sparkhouse-uptown-an-entrepreneurship-hub-a008e467",
+          "type": "news"
+        },
+        {
+          "label": "WCCB Charlotte - Sparkhouse Uptown grand opening",
+          "url": "https://www.wccbcharlotte.com/2026/06/20/sparkhouse-uptown-grand-opening-a-place-where-young-adults-can-take-ideas-and-turn-them-into-income/",
+          "type": "news"
+        },
+        {
+          "label": "WFAE - Uptown Charlotte's Sparkhouse opens on Juneteenth",
+          "url": "https://www.wfae.org/race-equity/2026-06-20/uptown-charlottes-sparkhouse-opens-on-juneteenth-to-foster-entrepreneurship-economic-mobility",
+          "type": "news"
+        }
+      ],
+      "notes": "20,000 sq ft entrepreneurship hub at 500 N. Tryon St (Harvey B. Gantt-owned building) run by nonprofit Do Greater Charlotte, includes a youth-operated coffee shop (Sparkhouse Coffee) alongside co-working, podcast studios, classrooms. Grand opening was June 19, 2026 (Juneteenth) — extremely fresh, well within the 60-day window. Strong community/nonprofit story angle, unique since it's youth-run.",
+      "reviewed": false
+    },
+    {
+      "id": "burr-berry-east-charlotte-monroe-rd",
+      "name": "Burr & Berry Coffee (4th Charlotte location)",
+      "city": "Charlotte",
+      "neighborhood": "East Charlotte / Elizabeth (Monroe Rd)",
+      "status": "opening_soon",
+      "confidence": "high",
+      "firstDetected": "2026-05-20",
+      "expectedOpening": "Late summer 2026",
+      "sources": [
+        {
+          "label": "Axios Charlotte - Drive-thru coffee chain Burr & Berry adds east Charlotte shop",
+          "url": "https://www.axios.com/local/charlotte/2026/05/20/drive-thru-coffee-chain-burry-and-berry-adds-east-charlotte-shop",
+          "type": "news"
+        },
+        {
+          "label": "Hoodline - East Charlotte Snags Burr & Berry Drive-Thru On Monroe Road",
+          "url": "https://hoodline.com/2026/05/east-charlotte-snags-burr-berry-drive-thru-on-monroe-road/",
+          "type": "news"
+        },
+        {
+          "label": "What Now Charlotte - Burr & Berry Brewing Up Fourth Charlotte Location",
+          "url": "https://whatnow.com/charlotte/restaurants/burr-berry-brewing-up-fourth-charlotte-location/",
+          "type": "news"
+        }
+      ],
+      "notes": "Locally owned drive-thru/walk-up coffee chain (existing locations include South Blvd and Monroe Rd) adding a 4th Charlotte location at 2905 Monroe Road, between Tipsy Burro and Smokey Joe's Cafe near the edge of Elizabeth. Targeting a late-summer 2026 opening with a compact stand format. Good early-coverage candidate since no opening date confirmed yet.",
+      "reviewed": false
+    },
+    {
+      "id": "7-brew-concord",
+      "name": "7 Brew",
+      "city": "Concord",
+      "neighborhood": null,
+      "status": "confirmed",
+      "confidence": "medium",
+      "firstDetected": "2026-03-24",
+      "expectedOpening": "Unannounced; permits filed",
+      "sources": [
+        {
+          "label": "What Now Charlotte - 7 Brew Targeting Concord For New Location",
+          "url": "https://whatnow.com/charlotte/restaurants/7-brew-targeting-concord-for-new-location/",
+          "type": "news"
+        }
+      ],
+      "notes": "Building permits indicate a 510 sq ft standalone drive-thru coffee shop at 1275 Concord Pkwy S, Concord, NC 28027. Part of a regional franchise push by investment group WJ Partners aiming for 100 7 Brew locations across the Carolinas/Georgia (announced November 2025). No opening timeline yet as of the March 24, 2026 article — worth monitoring for a firmer date since national chain openings draw less unique review interest but are still high-traffic searches.",
+      "reviewed": false
+    },
+    {
+      "id": "waterbean-coffee-exquisite-gastonia",
+      "name": "Waterbean Coffee Exquisite",
+      "city": "Gastonia",
+      "neighborhood": "Downtown Gastonia",
+      "status": "opening_soon",
+      "confidence": "medium",
+      "firstDetected": "2025-05-29",
+      "expectedOpening": "Originally targeted summer 2025; status unconfirmed as of mid-2026, verify before publishing",
+      "sources": [
+        {
+          "label": "What Now Charlotte - Waterbean Coffee Opening Large Location In Gastonia This Summer",
+          "url": "https://whatnow.com/charlotte/restaurants/waterbean-coffee-opening-large-location-in-gastonia-this-summer/",
+          "type": "news"
+        }
+      ],
+      "notes": "4,100 sq ft flagship-style location at 618 W Franklin Blvd, Gastonia, NC 28052 — would be Waterbean's largest of 18+ Greater Charlotte locations, with on-site bakery and high-end specialty coffee under the 'Waterbean Coffee Exquisite' sub-brand. Source article is from May 2025 and targeted a summer 2025 opening that may have already happened or slipped — this entry needs a fresh search next run to confirm current status before treating as 'coming soon.'",
+      "reviewed": false
+    },
+    {
+      "id": "bad-ass-coffee-hawaii-rock-hill",
+      "name": "Bad Ass Coffee of Hawaii",
+      "city": "Rock Hill",
+      "neighborhood": "The Thread (near downtown)",
+      "status": "opening_soon",
+      "confidence": "medium",
+      "firstDetected": "2026-01-05",
+      "expectedOpening": "Targeted March 2026",
+      "sources": [
+        {
+          "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
+          "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
+          "type": "news"
+        }
+      ],
+      "notes": "Hawaiian-themed specialty coffee franchise location planned at The Thread near downtown Rock Hill, SC, targeted for March 2026 per a January 5, 2026 Post and Courier piece on York County's coffee scene. Should confirm whether it has actually opened by now (article is ~6 months old as of this seed).",
+      "reviewed": false
+    },
+    {
+      "id": "scooters-coffee-york-county",
+      "name": "Scooter's Coffee",
+      "city": "Rock Hill",
+      "neighborhood": "Old York Road area",
+      "status": "opening_soon",
+      "confidence": "low",
+      "firstDetected": "2026-01-05",
+      "expectedOpening": "Grand opening targeted January 16, 2026",
+      "sources": [
+        {
+          "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
+          "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
+          "type": "news"
+        }
+      ],
+      "notes": "National drive-thru chain location at 4971 Old York Road, Rock Hill SC area, with grand opening dated Jan 16, 2026 per the same Post and Courier roundup. Low confidence because this is a single-source, single-line mention with no independent corroboration found yet, and as a national chain it's lower review priority but still worth tracking for completeness of the York County coffee trail picture.",
+      "reviewed": false
+    },
+    {
+      "id": "ellianos-coffee-clover-sc",
+      "name": "Ellianos Coffee",
+      "city": "Clover",
+      "neighborhood": null,
+      "status": "rumored",
+      "confidence": "low",
+      "firstDetected": "2026-01-05",
+      "expectedOpening": "Unspecified, announced expansion",
+      "sources": [
+        {
+          "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
+          "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
+          "type": "news"
+        }
+      ],
+      "notes": "Florida-based drive-thru coffee chain announced expansion to the Clover, SC area (York County, just SW of Rock Hill / outer Metrolina). No address or firm date found yet — single-source mention, needs follow-up search for permits or a more specific local announcement before upgrading confidence.",
+      "reviewed": false
+    },
+    {
+      "id": "parkin-latte-cherokee-county-expansion",
+      "name": "Parkin' Latte (storefront expansion)",
+      "city": "Clover",
+      "neighborhood": null,
+      "status": "rumored",
+      "confidence": "low",
+      "firstDetected": "2026-01-05",
+      "expectedOpening": "Sometime in 2026",
+      "sources": [
+        {
+          "label": "Post and Courier - York County highlights 'Coffee Trail' as more shops plan openings in 2026",
+          "url": "https://www.postandcourier.com/york-county/news/york-county-sc-coffee-trail-local-stores-2026/article_24ae6d07-c6c3-46f2-bdda-b50b2378a767.html",
+          "type": "news"
+        }
+      ],
+      "notes": "Existing mobile coffee business (owner Briana Harris) planning to open storefront locations in Clover and Blacksburg, SC (Cherokee County) sometime in 2026, per owner quote in the Post and Courier piece. This is at the far southwestern edge of what Caleb might consider 'Metrolina' — flagged as borderline geography, include only if Clover/York County storefronts are in scope. Low confidence, single source, no firm timeline.",
+      "reviewed": false
+    }
+  ]
+}

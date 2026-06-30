@@ -1,0 +1,429 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .cs-dash {
+    font-family: 'Space Mono', monospace;
+    background: #EFE4D3;
+    min-height: 100vh;
+    padding: 2.5rem 1.5rem 4rem;
+    color: #B01717;
+  }
+  .cs-dash .header { text-align: center; margin-bottom: 2.25rem; }
+  .cs-dash .eyebrow { font-size: clamp(10px, 2vw, 18px); letter-spacing: 0.28em; text-transform: uppercase; color: #B01717; margin-bottom: 0.6rem; opacity: 0.75; font-weight: 400; }
+  .cs-dash .title { font-family: 'Space Mono', monospace; font-size: clamp(1.6rem, 6vw, 3.2rem); font-weight: 700; color: #B01717; line-height: 1.1; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
+  .cs-dash .subtitle { font-size: clamp(10px, 2vw, 18px); letter-spacing: 0.2em; text-transform: uppercase; color: #B01717; opacity: 0.75; font-weight: 400; }
+  .cs-dash .rule { width: 48px; height: 1.5px; background: #B01717; margin: 1.25rem auto 0; opacity: 0.35; }
+  .cs-dash .updated-note { font-size: clamp(10px, 2vw, 16px); letter-spacing: 0.14em; text-transform: uppercase; color: #B01717; opacity: 0.65; margin-top: 0.75rem; font-weight: 400; }
+
+  .cs-dash .controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 2rem; }
+  .cs-dash .search-wrap { position: relative; }
+  .cs-dash .search-input {
+    width: 100%; background: transparent; border: 2px solid #B01717;
+    font-family: 'Space Mono', monospace; font-size: clamp(11px, 2vw, 19px); font-weight: 700;
+    letter-spacing: 0.06em; color: #B01717; padding: 10px 36px 10px 14px; outline: none;
+  }
+  .cs-dash .search-input::placeholder { color: #B01717; opacity: 0.6; font-weight: 400; }
+  .cs-dash .search-clear {
+    position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+    background: none; border: none; cursor: pointer; color: #B01717;
+    font-family: 'Space Mono', monospace; font-size: clamp(16px, 2.5vw, 28px); font-weight: 700;
+    line-height: 1; padding: 0; display: none; opacity: 0.6;
+  }
+  .cs-dash .search-clear:hover { opacity: 1; }
+  .cs-dash .filter-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .cs-dash .filter-label { font-size: clamp(9px, 1.8vw, 16px); letter-spacing: 0.2em; text-transform: uppercase; color: #B01717; font-weight: 700; margin-right: 2px; white-space: nowrap; }
+  .cs-dash .pill {
+    background: transparent; border: 1px solid #B01717; color: #B01717;
+    font-family: 'Space Mono', monospace; font-size: clamp(9px, 1.8vw, 16px); font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; padding: 5px 12px;
+    cursor: pointer; transition: background 0.12s, color 0.12s; white-space: nowrap;
+  }
+  .cs-dash .pill:hover { background: #B01717; color: #EFE4D3; }
+  .cs-dash .pill.active { background: #B01717; color: #EFE4D3; }
+
+  .cs-dash .sort-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+
+  .cs-dash .results-line { font-size: clamp(10px, 2vw, 18px); letter-spacing: 0.18em; text-transform: uppercase; color: #B01717; opacity: 0.7; margin-bottom: 1.25rem; text-align: center; }
+
+  .cs-dash .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 1px; background: #d4a898; border: 1px solid #d4a898; }
+  .cs-dash .card { background: #EFE4D3; padding: 1.6rem 1.4rem; display: flex; flex-direction: column; gap: 0.65rem; transition: background 0.12s; min-width: 0; overflow: hidden; container-type: inline-size; position: relative; }
+  .cs-dash .card:hover { background: #e6d5be; }
+  .cs-dash .card.is-reviewed { opacity: 0.55; }
+  .cs-dash .card-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+  .cs-dash .tag { font-size: clamp(9px, 1.8vw, 16px); letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 7px; border: 1px solid #B01717; color: #B01717; opacity: 0.8; font-weight: 400; white-space: nowrap; }
+  .cs-dash .tag.status-rumored { opacity: 0.55; }
+  .cs-dash .tag.status-confirmed { background: transparent; }
+  .cs-dash .tag.status-opening_soon { background: #B01717; color: #EFE4D3; opacity: 1; }
+  .cs-dash .tag.status-opened { opacity: 0.7; font-style: italic; }
+  .cs-dash .tag.status-reviewed { background: #B01717; color: #EFE4D3; opacity: 1; }
+  .cs-dash .tag-hood { font-size: clamp(9px, 1.8vw, 16px); letter-spacing: 0.14em; text-transform: uppercase; color: #B01717; opacity: 0.7; font-weight: 400; white-space: nowrap; }
+  .cs-dash .confidence-dots { display: inline-flex; align-items: center; gap: 3px; }
+  .cs-dash .confidence-dots .dot { width: 6px; height: 6px; border-radius: 50%; border: 1px solid #B01717; background: transparent; }
+  .cs-dash .confidence-dots .dot.filled { background: #B01717; }
+  .cs-dash .confidence-label { font-size: clamp(8px, 1.6vw, 13px); letter-spacing: 0.16em; text-transform: uppercase; color: #B01717; opacity: 0.6; font-weight: 400; }
+  .cs-dash .new-badge {
+    position: absolute; top: 0.9rem; right: 0.9rem; background: #B01717; color: #EFE4D3;
+    font-size: clamp(8px, 1.6vw, 12px); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 3px 8px; border-radius: 999px;
+  }
+  .cs-dash .card-name { font-size: clamp(1rem, 3vw, 1.25rem); font-weight: 700; color: #B01717; line-height: 1.2; letter-spacing: -0.01em; word-break: break-word; padding-right: 3.5rem; }
+  .cs-dash .card-loc { font-size: clamp(9px, 1.8vw, 14px); font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: #B01717; opacity: 0.65; margin-top: 0.15rem; padding-left: 14px; position: relative; word-break: break-word; }
+  .cs-dash .card-loc::before { content: "\2937"; position: absolute; left: 0; top: -1px; opacity: 0.8; }
+  .cs-dash .card-dates { display: flex; flex-direction: column; gap: 2px; margin-top: 0.2rem; }
+  .cs-dash .card-date-line { font-size: clamp(9px, 1.8vw, 14px); letter-spacing: 0.1em; text-transform: uppercase; color: #B01717; opacity: 0.75; font-weight: 400; }
+  .cs-dash .card-date-line b { font-weight: 700; opacity: 0.9; }
+  .cs-dash .card-note { font-size: clamp(10px, 2vw, 16px); color: #B01717; opacity: 0.7; line-height: 1.6; font-style: italic; font-weight: 400; word-break: break-word; margin-top: 0.25rem; }
+  .cs-dash .card-links { display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; margin-top: 0.5rem; }
+  .cs-dash .card-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 14px; border: 1px solid #B01717; color: #B01717; opacity: 0.8; text-decoration: none; transition: opacity 0.12s, background 0.12s; font-size: clamp(9px, 1.8vw, 13px); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; border-radius: 999px; }
+  .cs-dash .card-link:hover { opacity: 1; background: #B01717; color: #EFE4D3; }
+  .cs-dash .card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.4rem; }
+  .cs-dash .review-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    background: transparent; border: 1px solid #B01717; color: #B01717;
+    font-family: 'Space Mono', monospace; font-size: clamp(9px, 1.8vw, 13px); font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 14px; cursor: pointer;
+    transition: opacity 0.12s, background 0.12s; border-radius: 999px; white-space: nowrap;
+  }
+  .cs-dash .review-btn:hover { background: #B01717; color: #EFE4D3; }
+  .cs-dash .review-btn.is-reviewed { background: #B01717; color: #EFE4D3; opacity: 0.75; }
+
+  .cs-dash mark { background: #d4a898; color: #B01717; border-radius: 2px; }
+
+  .cs-dash .empty-state {
+    grid-column: 1 / -1; background: #EFE4D3; padding: 3rem 2rem;
+    display: flex; flex-direction: column; align-items: center; gap: 1rem;
+    border: 1px dashed #B01717;
+  }
+  .cs-dash .empty-heading { font-size: clamp(11px, 2vw, 19px); font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #B01717; text-align: center; }
+  .cs-dash .empty-msg { font-size: clamp(10px, 2vw, 18px); color: #B01717; line-height: 1.8; text-align: center; max-width: 480px; opacity: 0.75; font-weight: 400; }
+
+  @media (max-width: 480px) {
+    .cs-dash .filter-row { gap: 5px; }
+    .cs-dash .pill { padding: 5px 10px; }
+  }
+</style>
+<div class="cs-dash">
+  <div class="header">
+    <div class="eyebrow">Actually Fun Coffee</div>
+    <h1 class="title">Coming Soon Radar</h1>
+    <div class="subtitle">Charlotte &amp; Metrolina</div>
+    <div class="rule"></div>
+    <div class="updated-note" id="csd-updated-note"></div>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <input class="search-input" id="csd-search" type="text" placeholder="Search by name, city, or neighborhood..." autocomplete="off" />
+      <button class="search-clear" id="csd-search-clear" title="Clear">&#215;</button>
+    </div>
+    <div class="filter-row" id="csd-status-filters">
+      <span class="filter-label">Status &mdash;</span>
+    </div>
+    <div class="filter-row" id="csd-confidence-filters">
+      <span class="filter-label">Confidence &mdash;</span>
+    </div>
+    <div class="sort-row">
+      <span class="filter-label">Sort &mdash;</span>
+      <button class="pill active" data-csd-sort="detected">Newest Detected</button>
+      <button class="pill" data-csd-sort="opening">Soonest Opening</button>
+    </div>
+  </div>
+
+  <div class="results-line" id="csd-results-line"></div>
+  <div class="grid" id="csd-grid"></div>
+</div>
+
+<script>
+(function() {
+  // NOTE on persistence: "Mark as Reviewed" is a pure client-side (localStorage) toggle.
+  // There is no backend for this static dashboard, so a reviewed flag set here lives only
+  // in this browser. The source of truth for "reviewed" long-term is the JSON file itself
+  // (data/coming-soon-leads.json), which gets updated by a separate research/update job.
+  // If that job re-marks a shop reviewed:true, it will stick across devices/browsers;
+  // local-only toggles here are just a quick way to dim a card on this device until the
+  // next data refresh catches up.
+
+  var DATA_URL = "./data/coming-soon-leads.json";
+  var LS_LAST_VIEWED_KEY = "csd_last_viewed_at";
+  var LS_REVIEWED_OVERRIDES_KEY = "csd_reviewed_overrides";
+
+  var STATUS_LABELS = {
+    rumored: "Rumored",
+    confirmed: "Confirmed",
+    opening_soon: "Opening Soon",
+    opened: "Opened",
+    reviewed: "Reviewed"
+  };
+  var STATUS_ORDER = ["all", "rumored", "confirmed", "opening_soon", "opened", "reviewed"];
+  var CONFIDENCE_ORDER = ["all", "high", "medium", "low"];
+
+  var shops = [];
+  var lastUpdated = null;
+  var activeStatus = "all";
+  var activeConfidence = "all";
+  var activeSort = "detected";
+  var searchVal = "";
+  var loadFailed = false;
+  var newSinceCutoff = null; // timestamp captured BEFORE we overwrite localStorage
+
+  function readReviewedOverrides() {
+    try {
+      var raw = localStorage.getItem(LS_REVIEWED_OVERRIDES_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) { return {}; }
+  }
+  function writeReviewedOverrides(obj) {
+    try { localStorage.setItem(LS_REVIEWED_OVERRIDES_KEY, JSON.stringify(obj)); } catch (e) {}
+  }
+  var reviewedOverrides = readReviewedOverrides();
+
+  function isReviewed(shop) {
+    if (reviewedOverrides.hasOwnProperty(shop.id)) return !!reviewedOverrides[shop.id];
+    return !!shop.reviewed || shop.status === "reviewed";
+  }
+
+  function toggleReviewed(shop) {
+    var current = isReviewed(shop);
+    reviewedOverrides[shop.id] = !current;
+    writeReviewedOverrides(reviewedOverrides);
+    render();
+  }
+
+  function hl(text, q) {
+    if (!text || !q) return text || "";
+    var esc = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return text.replace(new RegExp("(" + esc + ")", "gi"), "<mark>$1</mark>");
+  }
+
+  function escapeHtml(s) {
+    if (!s) return "";
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  function confidenceDots(level) {
+    var levels = { low: 1, medium: 2, high: 3 };
+    var filled = levels[level] || 0;
+    var dots = "";
+    for (var i = 0; i < 3; i++) {
+      dots += '<span class="dot' + (i < filled ? ' filled' : '') + '"></span>';
+    }
+    return '<span class="confidence-dots">' + dots + '</span><span class="confidence-label">' + escapeHtml(level || "unknown") + '</span>';
+  }
+
+  function linkIcon() {
+    return '<svg class="ic" viewBox="0 0 16 16" fill="none" style="width:12px;height:12px;flex-shrink:0;"><path d="M6.5 9.5L9.5 6.5M5 11l-1.5 1.5a2.121 2.121 0 11-3-3L2 8M11 5l1.5-1.5a2.121 2.121 0 113 3L14 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/></svg>';
+  }
+
+  function formatDate(d) {
+    if (!d) return null;
+    try {
+      var dt = new Date(d + "T00:00:00");
+      if (isNaN(dt.getTime())) return d;
+      return dt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    } catch (e) { return d; }
+  }
+
+  function formatUpdated(iso) {
+    if (!iso) return "";
+    try {
+      var dt = new Date(iso);
+      if (isNaN(dt.getTime())) return "";
+      return "Last updated " + dt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) + " at " + dt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+    } catch (e) { return ""; }
+  }
+
+  function buildStatusFilters() {
+    var row = document.getElementById("csd-status-filters");
+    STATUS_ORDER.forEach(function(s) {
+      var b = document.createElement("button");
+      b.className = "pill" + (s === "all" ? " active" : "");
+      b.dataset.csdStatus = s;
+      b.textContent = s === "all" ? "All" : STATUS_LABELS[s];
+      b.addEventListener("click", function() {
+        activeStatus = s;
+        row.querySelectorAll("[data-csd-status]").forEach(function(x) { x.classList.toggle("active", x.dataset.csdStatus === s); });
+        render();
+      });
+      row.appendChild(b);
+    });
+  }
+
+  function buildConfidenceFilters() {
+    var row = document.getElementById("csd-confidence-filters");
+    CONFIDENCE_ORDER.forEach(function(c) {
+      var b = document.createElement("button");
+      b.className = "pill" + (c === "all" ? " active" : "");
+      b.dataset.csdConfidence = c;
+      b.textContent = c === "all" ? "All" : c.charAt(0).toUpperCase() + c.slice(1);
+      b.addEventListener("click", function() {
+        activeConfidence = c;
+        row.querySelectorAll("[data-csd-confidence]").forEach(function(x) { x.classList.toggle("active", x.dataset.csdConfidence === c); });
+        render();
+      });
+      row.appendChild(b);
+    });
+  }
+
+  function buildSortControls() {
+    document.querySelectorAll("[data-csd-sort]").forEach(function(b) {
+      b.addEventListener("click", function() {
+        activeSort = b.dataset.csdSort;
+        document.querySelectorAll("[data-csd-sort]").forEach(function(x) { x.classList.toggle("active", x.dataset.csdSort === activeSort); });
+        render();
+      });
+    });
+  }
+
+  function parseExpectedOpeningSortValue(shop) {
+    // Best-effort: try to find a date-ish token in the free-text expectedOpening string.
+    // Shops with no parseable date sort to the end.
+    var s = shop.expectedOpening;
+    if (!s) return Infinity;
+    var parsed = Date.parse(s);
+    if (!isNaN(parsed)) return parsed;
+    // Try "Month Year" patterns like "Late July 2026" by stripping qualifiers
+    var cleaned = s.replace(/\b(early|mid|late)\b/gi, "").trim();
+    parsed = Date.parse(cleaned + " 1");
+    if (!isNaN(parsed)) return parsed;
+    return Infinity;
+  }
+
+  function render() {
+    var grid = document.getElementById("csd-grid");
+    var line = document.getElementById("csd-results-line");
+    var q = searchVal.toLowerCase().trim();
+
+    if (loadFailed) {
+      grid.innerHTML =
+        '<div class="empty-state">' +
+          '<div class="empty-heading">Couldn\'t load the lead list</div>' +
+          '<div class="empty-msg">The dashboard couldn\'t fetch <code>data/coming-soon-leads.json</code>. Make sure that file exists next to this HTML file and that you\'re viewing this through a local server (not directly opened via file://, which some browsers block for fetch).</div>' +
+        '</div>';
+      line.textContent = "";
+      return;
+    }
+
+    var filtered = shops.filter(function(s) {
+      var statusOk = activeStatus === "all" || s.status === activeStatus || (activeStatus === "reviewed" && isReviewed(s));
+      var confidenceOk = activeConfidence === "all" || s.confidence === activeConfidence;
+      var searchOk = !q || [s.name, s.city, s.neighborhood || "", s.notes || ""].some(function(v) { return v.toLowerCase().includes(q); });
+      return statusOk && confidenceOk && searchOk;
+    });
+
+    filtered.sort(function(a, b) {
+      if (activeSort === "opening") {
+        return parseExpectedOpeningSortValue(a) - parseExpectedOpeningSortValue(b);
+      }
+      // default: newest detected first
+      return new Date(b.firstDetected) - new Date(a.firstDetected);
+    });
+
+    line.textContent = "Showing " + filtered.length + " shop" + (filtered.length !== 1 ? "s" : "");
+
+    if (!filtered.length) {
+      grid.innerHTML =
+        '<div class="empty-state">' +
+          '<div class="empty-heading">No shops match</div>' +
+          '<div class="empty-msg">' + (shops.length ? "Try clearing your search or filters." : "No leads in the data file yet. Once the research job runs, new shops will show up here automatically.") + '</div>' +
+        '</div>';
+      return;
+    }
+
+    grid.innerHTML = filtered.map(function(s) {
+      var reviewed = isReviewed(s);
+      var isNew = newSinceCutoff && s.firstDetected && new Date(s.firstDetected + "T00:00:00").getTime() > newSinceCutoff;
+      var hoodDisplay = s.neighborhood ? '<span class="tag-hood">' + hl(s.neighborhood, q) + '</span>' : "";
+      var statusTag = '<span class="tag status-' + s.status + '">' + escapeHtml(STATUS_LABELS[s.status] || s.status) + '</span>';
+
+      var dates = '<div class="card-dates">';
+      dates += '<span class="card-date-line">First detected: <b>' + escapeHtml(formatDate(s.firstDetected) || "Unknown") + '</b></span>';
+      if (s.expectedOpening) {
+        dates += '<span class="card-date-line">Expected opening: <b>' + escapeHtml(s.expectedOpening) + '</b></span>';
+      }
+      dates += '</div>';
+
+      var links = "";
+      (s.sources || []).forEach(function(src) {
+        links += '<a class="card-link" href="' + escapeHtml(src.url) + '" target="_blank" rel="noopener" title="' + escapeHtml(src.label) + '">' + linkIcon() + escapeHtml(src.label) + '</a>';
+      });
+
+      var note = s.notes ? '<div class="card-note">' + hl(s.notes, q) + '</div>' : "";
+
+      var reviewBtn = '<button class="review-btn' + (reviewed ? ' is-reviewed' : '') + '" data-csd-review-id="' + escapeHtml(s.id) + '">' + (reviewed ? "Reviewed ✓" : "Mark as Reviewed") + '</button>';
+
+      return '<div class="card' + (reviewed ? ' is-reviewed' : '') + '">' +
+        (isNew ? '<span class="new-badge">New</span>' : '') +
+        '<div class="card-meta">' + statusTag + hoodDisplay + confidenceDots(s.confidence) + '</div>' +
+        '<div class="card-name">' + hl(s.name, q) + '</div>' +
+        '<div class="card-loc">' + hl(s.city, q) + '</div>' +
+        dates +
+        note +
+        '<div class="card-links">' + links + '</div>' +
+        '<div class="card-actions">' + reviewBtn + '</div>' +
+      '</div>';
+    }).join("");
+
+    grid.querySelectorAll("[data-csd-review-id]").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var id = btn.dataset.csdReviewId;
+        var shop = shops.filter(function(s) { return s.id === id; })[0];
+        if (shop) toggleReviewed(shop);
+      });
+    });
+  }
+
+  function init(data) {
+    shops = (data && Array.isArray(data.shops)) ? data.shops : [];
+    lastUpdated = (data && data.lastUpdated) || null;
+    document.getElementById("csd-updated-note").textContent = lastUpdated ? formatUpdated(lastUpdated) : "";
+
+    // Compute "new since last viewed" BEFORE overwriting the stored timestamp.
+    var storedLastViewed = null;
+    try { storedLastViewed = localStorage.getItem(LS_LAST_VIEWED_KEY); } catch (e) {}
+    newSinceCutoff = storedLastViewed ? new Date(storedLastViewed).getTime() : null;
+
+    render();
+
+    // Now update the stored "last viewed" timestamp to now, for next visit.
+    try { localStorage.setItem(LS_LAST_VIEWED_KEY, new Date().toISOString()); } catch (e) {}
+  }
+
+  function initEmpty() {
+    loadFailed = true;
+    document.getElementById("csd-updated-note").textContent = "";
+    render();
+  }
+
+  buildStatusFilters();
+  buildConfidenceFilters();
+  buildSortControls();
+
+  var searchEl = document.getElementById("csd-search");
+  var clearEl = document.getElementById("csd-search-clear");
+  searchEl.addEventListener("input", function() {
+    searchVal = searchEl.value;
+    clearEl.style.display = searchVal ? "block" : "none";
+    render();
+  });
+  clearEl.addEventListener("click", function() {
+    searchEl.value = "";
+    searchVal = "";
+    clearEl.style.display = "none";
+    searchEl.focus();
+    render();
+  });
+
+  fetch(DATA_URL, { cache: "no-store" })
+    .then(function(res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(function(data) { init(data); })
+    .catch(function(err) {
+      console.error("coming-soon-dashboard: failed to load data file", err);
+      initEmpty();
+    });
+})();
+</script>
