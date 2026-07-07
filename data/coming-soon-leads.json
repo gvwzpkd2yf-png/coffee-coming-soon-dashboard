@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T21:05:26Z",
+  "lastUpdated": "2026-07-07T17:30:00Z",
   "shops": [
     {
       "id": "la-la-land-kind-cafe-charlotte",
@@ -344,10 +344,10 @@
       "name": "Dutch Bros Coffee",
       "city": "Mooresville",
       "neighborhood": "Williamson Rd",
-      "status": "confirmed",
-      "confidence": "medium",
+      "status": "opened",
+      "confidence": "high",
       "firstDetected": "2026-06-30",
-      "expectedOpening": "Unannounced; address known, part of announced NC/SC expansion wave",
+      "expectedOpening": "Opened ~March 26, 2026 (converted from Clutch Coffee Bar)",
       "sources": [
         {
           "label": "Roadtrippers - Dutch Bros Coffee, Coming Soon, Mooresville",
@@ -358,9 +358,19 @@
           "label": "WBTV - Dutch Bros announces opening day for first Charlotte-area shop (notes planned NC/SC expansion incl. Mooresville)",
           "url": "https://www.wbtv.com/2026/03/30/dutch-bros-announces-opening-day-first-charlotte-area-shop/",
           "type": "news"
+        },
+        {
+          "label": "RJR Pine Whispers - Grounds for change: Dutch Bros replaces Clutch Coffee",
+          "url": "https://rjrpinewhispers.com/2026/04/07/grounds-for-change-dutch-bros-replaces-clutch-coffee/",
+          "type": "news"
+        },
+        {
+          "label": "Real Estate Daily News - Dutch Bros Acquires Clutch Coffee Bar, Bringing the Brand to 20 Locations Across North Carolina",
+          "url": "https://realestatedaily-news.com/dutch-bros-acquires-clutch-coffee-bar-bringing-the-brand-to-20-locations-across-north-carolina/",
+          "type": "news"
         }
       ],
-      "notes": "NEW 2026-06-30: a 'coming soon' Dutch Bros location is listed at 356 Williamson Rd, Mooresville, NC 28117, consistent with the company's announced post-Rock Hill expansion wave into Mooresville, Indian Trail, Clemmons, Monroe and other NC/SC towns. No firm opening date found yet — national chain, lower unique-review priority but worth tracking as Mooresville's first.",
+      "notes": "CORRECTED 2026-07-07: this is NOT new construction — it's a converted Clutch Coffee Bar location. Clutch (a Mooresville-founded, 20-unit NC/SC drive-thru chain co-founded by ex-Dutch Bros manager Darren Spicer) was acquired by Dutch Bros in a deal announced Jan 16, 2026; all Clutch stores closed briefly for rebrand/renovation and reopened as Dutch Bros around March 26, 2026. The 356 Williamson Rd, Mooresville NC 28117 address tracked here was a Clutch location and is now operating as Dutch Bros. Status upgraded from confirmed to opened accordingly. Same acquisition also converted the existing Indian Trail Clutch into Dutch Bros — see separate 'dutch-bros-indian-trail' entry.",
       "reviewed": false
     },
     {
@@ -607,6 +617,88 @@
         }
       ],
       "notes": "NEW 2026-06-30: combination bookstore / coffee shop / biergarten planned at 117 Gilead Road in downtown Huntersville, NC. Zoning approved January 2025; owners posting 'steady progress' construction updates as of 2026 but no firm opening date yet. One of the only concrete 'coming soon' coffee-adjacent leads found for Huntersville this run — town otherwise returned thin signal (mostly existing operators: Coffee Republic, Defined Coffee, Harvest Artisan Cafe, Caribou).",
+      "reviewed": false
+    },
+    {
+      "id": "dutch-bros-indian-trail",
+      "name": "Dutch Bros Coffee",
+      "city": "Indian Trail",
+      "neighborhood": "E Independence Blvd",
+      "status": "opened",
+      "confidence": "high",
+      "firstDetected": "2026-07-07",
+      "expectedOpening": "Opened ~March 26, 2026 (converted from Clutch Coffee Bar)",
+      "sources": [
+        {
+          "label": "QSR Magazine - Dutch Bros to Acquire Drive-Thru Chain Clutch Coffee",
+          "url": "https://www.qsrmagazine.com/story/dutch-bros-to-acquire-drive-thru-chain-clutch-coffee/",
+          "type": "news"
+        },
+        {
+          "label": "Dutch Bros Coffee - Indian Trail location page",
+          "url": "https://www.dutchbros.com/locations/nc/indian-trail/13947-e-independence-blvd",
+          "type": "other"
+        },
+        {
+          "label": "Real Estate Daily News - Dutch Bros Acquires Clutch Coffee Bar, Bringing the Brand to 20 Locations Across North Carolina",
+          "url": "https://realestatedaily-news.com/dutch-bros-acquires-clutch-coffee-bar-bringing-the-brand-to-20-locations-across-north-carolina/",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-07-07: one of the original Clutch Coffee Bar locations at 13947 E Independence Blvd, Indian Trail NC, converted to Dutch Bros as part of the ~20-store Clutch acquisition (announced Jan 16, 2026, conversions completed around March 26, 2026). Wasn't previously tracked in this file; surfaced while following up on the Mooresville Dutch Bros entry. National chain / lower unique-review priority, but confirmed open and Indian Trail's first Dutch Bros.",
+      "reviewed": false
+    },
+    {
+      "id": "cocotte-french-bakery-huntersville",
+      "name": "Cocotte French Bakery (2nd location)",
+      "city": "Huntersville",
+      "neighborhood": "Gilead Road",
+      "status": "opening_soon",
+      "confidence": "high",
+      "firstDetected": "2026-07-07",
+      "expectedOpening": "Late July / early August 2026",
+      "sources": [
+        {
+          "label": "What Now Charlotte - Cocotte French Bakery Expanding Its Footprint With Second Location",
+          "url": "https://whatnow.com/charlotte/restaurants/cocotte-french-bakery-expanding-its-footprint-with-second-location/",
+          "type": "news"
+        },
+        {
+          "label": "K104.7 - Cocotte French Bakery Will Open Second Location in Huntersville This Summer",
+          "url": "https://k1047.com/2026/06/16/cocotte-french-bakery-will-open-second-location-in-huntersville-this-summer/",
+          "type": "news"
+        },
+        {
+          "label": "Cocotte official site (Cornelius flagship)",
+          "url": "https://www.cocottebakery.com/",
+          "type": "other"
+        }
+      ],
+      "notes": "NEW 2026-07-07: French bakery + coffee shop (founders Alexandre Darbousset and Angela Yeo) opening a second location at 111 Gilead Road, Huntersville, NC, less than two years after their original Cornelius location (9623 Bailey Road) opened. Targeting late July/early August 2026, guest-experience-focused with a children's corner like the Cornelius flagship. Multi-source, specific address and near-term window — good early review candidate to watch for the actual opening.",
+      "reviewed": false
+    },
+    {
+      "id": "southern-grounds-co-charlotte",
+      "name": "Southern Grounds & Co. (Dilworth + Plaza Midwood)",
+      "city": "Charlotte",
+      "neighborhood": "Dilworth / Plaza Midwood",
+      "status": "rumored",
+      "confidence": "low",
+      "firstDetected": "2026-07-07",
+      "expectedOpening": "Unannounced; letters of intent signed, leases not yet finalized",
+      "sources": [
+        {
+          "label": "What Now Charlotte - Southern Grounds & Co. Plans First North Carolina Locations in Charlotte",
+          "url": "https://whatnow.com/charlotte/restaurants/southern-grounds-co-plans-first-north-carolina-locations-in-charlotte/",
+          "type": "news"
+        },
+        {
+          "label": "K104.7 - Southern Grounds & Co. Eyes Charlotte for First Expansion Beyond Florida",
+          "url": "https://k1047.com/2026/06/19/southern-grounds-co-eyes-charlotte-for-first-expansion-beyond-florida/",
+          "type": "news"
+        }
+      ],
+      "notes": "NEW 2026-07-07: Florida-based (Neptune Beach) hybrid coffee shop / bakery / restaurant concept, founded 2016, has signed letters of intent (per founder Mark Janasik) for two Charlotte locations in Dilworth and Plaza Midwood — would be Southern Grounds' first expansion outside Florida. No addresses, no finalized leases, no opening dates as of this run. Tracking as a single entry for now covering both planned neighborhoods since neither has a firm site yet; split into separate per-neighborhood entries once addresses/leases are confirmed. Confidence kept low per playbook guidance (LOI-stage, no finalized lease) despite the multiple outlet pickups, since all coverage traces back to the same single announcement.",
       "reviewed": false
     }
   ]
